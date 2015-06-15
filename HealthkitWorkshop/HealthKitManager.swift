@@ -60,7 +60,7 @@ public class HealthKitManager {
         // In deze functie willen we het laatst bekende gewicht van de gebruiker uit HealthKit lezen.
         //
         // Tips: De HKSampleQuery-reference kan hierbij goed van pas komen.
-        //       Omdat je alleen de laatste sample wil hebben kan je de limit van de query op 1 stellen.
+        //       Omdat je alleen de laatste sample wil hebben kan je het aantal resultaten limiteren tot 1.
         //       Vergeet niet de samples op datum te sorteren.
         //       Zet de laatste sample om naar de juiste eenheid met HKQuantitySample.quantity.doubleValueForUnit()
         
@@ -77,8 +77,9 @@ public class HealthKitManager {
     
     func getConsumedCalories(completionHandler: (Int?, NSError?) -> ()) {
         
-        // In deze functie willen we uit HealthKit halen hoeveel kcal de gebruiker in de afgelopen dag heeft ingenomen.
-        // Hiervoor gaan we gebruik maken van een statistics query. Deze statistics query kan ons de som van het aantal ingenomen kcal geven over een bepaalde periode.
+        // In deze functie willen we uit HealthKit halen hoeveel kcal de gebruiker in de afgelopen dag (24 uur) heeft ingenomen.
+        // Hiervoor gaan we gebruik maken van een statistics query. 
+        // Deze statistics query kan ons de som van het aantal ingenomen kcal geven over een bepaalde periode.
         //
         // Tip: de reference voor de HKStatisticQuery zal hierbij goed van pas komen
         
@@ -87,7 +88,6 @@ public class HealthKitManager {
     func writeCaloriesToHealthKit(calories: Double, completionHandler: (Bool, NSError!) -> ()) {
         
         // In deze functie gaan we het aantal calorieen dat wordt meegegeven in de calories-parameter wegschrijven naar HealthKit.
-        // We schrijven een sample weg voor dit moment. 
         //
         // Tip: zoek uit hoe de HealthKitStore.saveObject() methode werkt.
 
