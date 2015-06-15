@@ -10,33 +10,33 @@
 	<string>HealthkitWorkshop</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>973E20A9A854B6A2B2DE28DC399231795C5FE572</key>
+		<string>https://github.com/JeroenSchonenberg/MADHealthKitWorkshop.git</string>
 		<key>9D14F78B86B63FA426FCE34D45877286AB4E1536</key>
 		<string>https://github.com/MartijnHols/MAD-HealthKitWorkshop.git</string>
-		<key>CFF0FD8C8D218BC3E89266A9D30998A649B55C1E</key>
-		<string>https://github.com/JeroenSchonenberg/MADHealthKitWorkshop.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HealthkitWorkshop.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>973E20A9A854B6A2B2DE28DC399231795C5FE572</key>
+		<string>../..</string>
 		<key>9D14F78B86B63FA426FCE34D45877286AB4E1536</key>
 		<string>../../../MAD-HealthKitWorkshop</string>
-		<key>CFF0FD8C8D218BC3E89266A9D30998A649B55C1E</key>
-		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/JeroenSchonenberg/MADHealthKitWorkshop.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CFF0FD8C8D218BC3E89266A9D30998A649B55C1E</string>
+	<string>973E20A9A854B6A2B2DE28DC399231795C5FE572</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CFF0FD8C8D218BC3E89266A9D30998A649B55C1E</string>
+			<string>973E20A9A854B6A2B2DE28DC399231795C5FE572</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HealthKitWorkshop</string>
 		</dict>
