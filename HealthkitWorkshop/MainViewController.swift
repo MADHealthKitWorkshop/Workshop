@@ -83,7 +83,7 @@ class MainViewController: UIViewController {
         healthKitManager.getConsumedCalories({ (caloriesConsumed, error) -> Void in
             
             // Deze completionHandler wordt aangeropen wanneer de HealthKit query een resultaat heeft.
-            // self.caloriesConsumed moet hier een waarde krijgen. (hierdoor zal het UILabel automatisch zijn waarde krijgen)
+            // self.caloriesConsumed moet hier een waarde krijgen. (hierdoor zal het bijbehorende UILabel automatisch geupdate worden)
             // Zodra we weten hoeveel calorieen er zijn ingenomen kunnen we proberen het aantal bier dat de gebruiker nog mag drinken te berekenen.
             //
             // Let op: healthkit queries worden niet op de main queue uitgevoerd. Je zult hier dus terug moeten "springen" naar de main queue.
@@ -99,7 +99,7 @@ class MainViewController: UIViewController {
         // BMR van een man =    66   +  (13.7 * gewicht in kg)  +  (5.0 * lengte in cm)  -  (6.8 * leeftijd in jaren)
         // BMR van een vrouw =  655  +  (9.60 * gewicht in kg)  +  (1.8 * lengte in cm)  -  (4.7 * leeftijd in jaren)
         //
-        // self.BMR moet hier een waarde krijgen (hierdoor zal het BMR UILabel automatisch zijn waarde krijgen)
+        // self.BMR moet hier een waarde krijgen (hierdoor zal het bijbehorende UILabel automatisch geupdate worden)
         // Zodra we de BMR berekend hebben kunnen we proberen om het aantal biertjes dat de gebruiker mag drinken te berekenen
     
     }
@@ -108,7 +108,7 @@ class MainViewController: UIViewController {
         
         // Zodra we de BMR en de ingenomen calorieen weten kunnen we hier berekenen hoeveel biertjes de gebruiker nog mag drinken.
         // Een glas bier bevat ongeveer 110 kcal.
-        // self.beersLeft moet hier een waarde krijgen.
+        // self.beersLeft moet hier een waarde krijgen. (hierdoor zal het bijbehorende UILabel automatisch geupdate worden)
 
     }
     
